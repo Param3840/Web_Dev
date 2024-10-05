@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .weather{
+         
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .city{
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 600;
+        }
+      input{
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+</head>
+<body>
+    <div class="lg:bg-[url('./media/sunset.jpg')] sm:bg-[url('./media/sunset.jpg')] sm:bg-cover sm:bg-no-repeat sm:h-[610px] bg-cover bg-no-repeat lg:h-[620px] w-full ">
+
+
+        <div class=" flex ml-[40px] pt-[40px]">
+            <div><img src="media/sun.png" alt=""></div>
+            <div class="ml-[10px]"><h1 class="weather mt-4">Weather  Forecast</h1></div>
+        </div>
+
+        <div class="flex justify-center items-center h-[30vh]">
+            <div>
+               
+                <div class="flex relative " >
+                  
+                    <input id="city" class="input w-[500px] h-[50px] p-5 rounded-3xl bg-[#8c1b01] border border-white text-white text-[20px]"  type="text" placeholder="Search">
+                     <img class="absolute ml-[450px] mt-[6px] mr-[10px]" src="media/Search_icon.png" alt="" width="40px">
+                    
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="justify-center flex mt-[40px] bg-[#7d1400] text-white font-serif w-[130px] p-2 rounded-3xl ">
+                        <div><button id="search" class="">Search</button></div>
+                </div>
+                </div>
+            </div>
+
+            
+    
+        </div>
+
+       <div class="flex justify-center mt-[20px]">
+       <div>
+      <div class="flex text-white">
+        <div><img src="media/location1.png" alt="" width="38px"></div>
+        <div class="mt-[8px] ml-[25px]">  <h1 id="city-name" class="font-semibold">Mussoorie ,  Uttarakhand
+        </h1></div>
+      </div>
+ 
+        <div class="flex mt-[10px] ml-[10px] text-white font-semibold">
+            <div><img src="media/temp.png" alt="" width="30px"></div>
+            <div class="ml-[22px]"><h1>Temperature -> </h1></div>
+            <div class="ml-[10px]"><h1 id="city-temp">16</h1></div>
+        </div>
+        <div class="flex mt-[10px] font-semibold text-white">
+            <div><img src="media/cloud.png" alt=""></div>
+            <div class="mt-[10px] ml-[20px]"><h1>Cloud -> </h1></div>
+            <div class="mt-[10px] ml-[10px]"><h1 id="city-cloud">50</h1></div>
+        </div>
+        <div class="flex mt-[10px] font-semibold text-white">
+            <div><img src="media/humidity.png" alt=""></div>
+            <div class="mt-[8px] ml-[20px]"><h1>Humidity -> </h1></div>
+            <div class="mt-[10px] ml-[10px]"><h1 id="city-humidity">35</h1></div>
+        </div>
+       
+        
+       </div>
+       </div>
+
+       <div class="flex justify-center mt-[30px]">
+       <div class="flex text-white font-semibold bg-white bg-opacity-50 p-6 rounded-lg shadow-lg w-[300px] h-[50px] justify-center items-center">
+        <div><h1 class="text-black font-bold">Time -> </h1></div>
+        <div class="ml-[10px]"><h1 id="city-time"> 20-10-2024 20:30</h1></div>
+       </div>
+       </div>
+
+    </div>
+<script src="weatherUpdateProject.js"></script>
+</body>
+</html>
